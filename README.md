@@ -58,8 +58,8 @@ adb emu sms send 5551234567 "Your code is 482913"
 - `data/sync/OtpSyncRepository` — when OTP sync is on, `SmsDeliverReceiver` hands it each detected
   code; it's encrypted with AES-256-GCM under a PBKDF2-derived key and written to Firestore. The
   sync key stays on the device, wrapped by the Android Keystore. Format and setup: `docs/otp-sync.md`;
-  security rules: `firestore.rules`. The desktop readers live in `~/Documents/OpenMessagesMac`
-  (Swift) and `~/Documents/OpenMessagesWindows` (C#/WPF).
+  security rules: `firestore.rules`. The desktop readers live in [OpenMessagesMac](https://github.com/Open-Messages/OpenMessagesMac)
+  (Swift) and [OpenMessagesWindows](https://github.com/Open-Messages/OpenMessagesWindows) (C#/WPF).
 - UI is Compose + Material 3 (dynamic color), Navigation Compose, one ViewModel per complex screen.
 
 ## Not implemented

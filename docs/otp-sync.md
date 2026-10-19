@@ -13,8 +13,8 @@ Signing in is optional. The rest of the app works without an account.
 5. Create a **Cloud Firestore** database and deploy the rules: `firebase deploy --only firestore:rules`, using the [`firestore.rules`](../firestore.rules) file in the project root.
 6. Optional but recommended: add a **TTL policy** on collection group `otps`, field `expiresAt`. Firestore then deletes old codes automatically. Clients also hide expired records themselves.
 7. Set up the desktop apps:
-   - **Mac** (`~/Documents/OpenMessagesMac`): add an **Apple app** with bundle ID `com.hummcare.messages.mac` and download its `GoogleService-Info.plist`. This file supplies the OAuth client the Mac app uses for sign-in.
-   - **Windows** (`~/Documents/OpenMessagesWindows`): in Google Cloud Console for the same project, create an OAuth client of type **Desktop app**. Put its client ID and secret, together with the Web API key and project ID, in `firebase-config.json`. See that project's README.
+   - **Mac** ([OpenMessagesMac](https://github.com/Open-Messages/OpenMessagesMac)): add an **Apple app** with bundle ID `com.hummcare.messages.mac` and download its `GoogleService-Info.plist`. This file supplies the OAuth client the Mac app uses for sign-in.
+   - **Windows** ([OpenMessagesWindows](https://github.com/Open-Messages/OpenMessagesWindows)): in Google Cloud Console for the same project, create an OAuth client of type **Desktop app**. Put its client ID and secret, together with the Web API key and project ID, in `firebase-config.json`. See that project's README.
 
 ## Firestore layout
 
