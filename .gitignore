@@ -1,0 +1,29 @@
+# Gradle / Kotlin
+.gradle/
+.kotlin/
+build/
+local.properties
+
+# IDE / OS
+.idea/
+*.iml
+.DS_Store
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Build outputs; publish APKs as release assets instead.
+*.apk
+*.aab
+
+# Signing keys and secrets: never commit.
+*.jks
+*.keystore
+keystore.properties
+.env*
+
+# Firebase config; add it locally (see docs/otp-sync.md).
+google-services.json
+# Firebase CLI debug logs
+firebase-debug*.log
+firestore-debug.log

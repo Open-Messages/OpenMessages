@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The OTP sync key is wrapped by a device-bound Keystore key, so it must never be backed up or transferred. -->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="sharedpref" path="otp_sync_key.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="sharedpref" path="otp_sync_key.xml" />
+    </device-transfer>
+</data-extraction-rules>
