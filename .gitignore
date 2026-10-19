@@ -27,3 +27,6 @@ google-services.json
 # Firebase CLI debug logs
 firebase-debug*.log
 firestore-debug.log
+
+# Private issue/security notes: local only.
+SECURITY_NOTES.md
